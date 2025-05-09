@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Salut Anghelina!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      text-align: center;
+      background-image: url('img_luv/vibe.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      transition: background-image 1s ease-in-out;
+    }
+
+    h1 {
+      margin-top: 40px;
+    }
+
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 900px;
+      margin: 40px auto;
+    }
+
+    .image-grid a {
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .image-grid a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255,255,255,0.7);
+    }
+
+    .image-grid img {
+      width: 250px;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 12px 24px;
+      background-color: rgba(255, 255, 255, 0.85);
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .btn-link:hover {
+      background-color: white;
+    }
+
+    /* Lightbox stil cu :target */
+    .lightbox {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.9);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border: 5px solid white;
+      border-radius: 12px;
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      color: white;
+      font-size: 40px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .close:hover {
+      color: red;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <h1>Salut Anghelina ( =</h1>
+  <div class="image-grid">
+    <a href="#img1"><img src="img_luv/chillry.jpg"></a>
+    <a href="#img2"><img src="img_luv/photo_2025-05-09_18-43-36.jpg"></a>
+    <a href="#img3"><img src="img_luv/coffi.jpg"></a>
+    <a href="#img4"><img src="img_luv/photo_2025-05-09_18-43-42.jpg"></a>
+    <a href="#img5"><img src="img_luv/pretty.jpg"></a>
+    <a href="#img6"><img src="img_luv/vibe.jpg"></a>
+    <a href="#img7"><img src="img_luv/photo_2025-05-09_20-19-54.jpg"></a>
+    <a href="#img8"><img src="img_luv/photo_2025-05-09_20-20-13.jpg"></a>
+    <a href="#img9"><img src="img_luv/photo_2025-05-09_20-20-24.jpg"></a>
+  </div>
+
+  <!-- Lightbox fullscreen pentru fiecare imagine -->
+  <div id="img1" class="lightbox"><a href="#" class="close">&times;</a><img src="img_luv/chillry.jpg"></div>
+  <div id="img2" class="lightbox"><a href="#" class="close">&times;</a><img src="img_luv/photo_2025-05-09_18-43-36.jpg"></div>
+  <div id="img3" class="lightbox"><a href="#" class="close">&times;</a><img src="img_luv/coffi.jpg"></div>
+  <div id="img4" class="lightbox"><a href="#" class="close">&times;</a><img src="img_luv/photo_2025-05-09_18-43-42.jpg"></div>
+  <div id="img5" class="lightbox"><a href="#" class="close">&times;</a><img src="img_luv/pretty.jpg"></div>
+  <div id="img6" class="lightbox"><a href="#" class="close">&times;</a><img src="img_luv/vibe.jpg"></div>
+  <div id="img7" class="lightbox"><a href="#" class="close">&times;</a><img src="img_luv/photo_2025-05-09_20-19-54.jpg"></div>
+  <div id="img8" class="lightbox"><a href="#" class="close">&times;</a><img src="img_luv/photo_2025-05-09_20-20-13.jpg"></div>
+  <div id="img9" class="lightbox"><a href="#" class="close">&times;</a><img src="img_luv/photo_2025-05-09_20-20-24.jpg"></div>
+
+
+<a href="haha.html" class="btn-link">Apasa pe buton Anghelincik ( =</a>
+</body>
+</html>
